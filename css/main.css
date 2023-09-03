@@ -1,0 +1,34 @@
+.logo{
+    width: 50px;
+}
+
+.toggle-bar li, .nav-bar i, .layer h3{
+    cursor: pointer;
+}
+.layer{
+    background-color: rgba(255, 255, 255, 0.774);
+    width: 100%;
+    height: 0%;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.meal:hover{
+    .layer{
+        height: 100%;
+        visibility: visible;
+    }
+}
+
+#search input{
+    width: 40%;
+    height: 40px;
+    border-color: white;
+    border-radius: 5px;
+}
+
+#contact input{
+    width: 40%;
+    height: 40px;
+    border-color: white;
+    border-radius: 5px;
+}

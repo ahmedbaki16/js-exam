@@ -1,0 +1,141 @@
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="bootstrap" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Yummy</title>
+      <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+      <!--Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+      <!-- Css Files  -->
+      <link rel="stylesheet" href="./css/all.min.css" />
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/main.css" />
+
+      <script src="./js/bootstrap.bundle.min.js"></script>
+
+   </head>
+   <body >
+
+      <!--Start of navigation bar-->
+      <div class="vh-100 position-fixed d-flex top-0 bg-black text-white z-3">
+
+         <div class="toggle-bar d-flex flex-column justify-content-between min-vh-100 p-4 d-none">
+         <div class="links">
+             <ul class="list-unstyled">
+                 <li onclick="search()" class="py-2" >Search</li>
+                 <li onclick="category()" class="py-2" >Categories</li>
+                 <li onclick="area()" class="py-2" >Area</li>
+                 <li onclick="ingredient()" class="py-2" >Ingredients</li>
+                 <li onclick="contact()" class="py-2" >Contact Us</li>
+             </ul>
+         </div>
+         <div class="nav-social">
+             <div class="icons">
+                 <i class="fa-brands fa-facebook"></i>
+                 <i class="fa-brands fa-twitter"></i>
+                 <i class="fa-solid fa-globe"></i>
+             </div>
+             <div class="nav-footer">
+                 <p>Ahmed Abdelbaki <br> Route 2023</p>
+             </div>
+         </div>
+         </div>
+
+         <div class="nav-bar d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+
+            <img class="logo" src="./images/logo.png" alt="logo">
+
+            <i onclick="menubutton()" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            
+            <div>
+               <i class="fa-solid fa-globe d-block py-2"></i>
+               <i class="fa-solid fa-share-nodes py-2"></i>
+            </div>
+         </div>
+      </div>
+      <!--End of navigation bar-->
+      
+
+      <!--Home-->
+      <div id="home" class="bg-dark mt-4">
+         <div class="container">
+               <div id="display-home" class="row g-4">
+
+
+            </div>
+         </div>
+      </div>
+
+      <!--Search-->
+      <div id="search" class="bg-dark d-none">
+         <div class="d-flex justify-content-around p-4">
+            <input oninput="namesearch()" type="text" placeholder="Search By Name" value="" id="namesearch" class="bg-black text-white">
+            <input oninput="lettersearch()" type="text" placeholder="Search By Letter" value="" id="lettersearch" class="bg-black text-white">      
+         </div>
+         <div class="container">
+            <div id="display-search" class="row g-4">
+
+
+         </div>
+      </div>
+
+      </div>
+
+      <!--Categories-->
+      <div id="category" class="bg-dark pt-4 pb-4 d-none">
+         <div class="container">
+               <div id="display-category" class="row g-4">
+                  
+
+            </div>
+         </div>
+      </div>
+
+      <!--Area-->
+      <div id="area" class="bg-dark mt-4 d-none">
+         <div class="container">
+               <div id="display-area" class=" row g-4 text-white text-center">
+                  
+               </div>
+         </div>
+      </div>
+
+      <!--Ingredient-->
+      
+      <div id="ingredient" class="bg-dark mt-4 d-none">
+         <div class="container">
+               <div id="display-ingredient" class=" row g-4 text-white text-center">
+                  
+               </div>
+         </div>
+      </div>
+      <!--Contact Us-->     
+      <div id="contact" class="bg-dark h-100 d-none">
+         <div class="d-flex flex-wrap justify-content-around p-4">
+            <input oninput="checkname()" type="text" placeholder="Enter You Name" value="" class="my-4" id="name">
+            <input oninput="checkemail()" type="text" placeholder="Enter Your Email" value="" class="my-4" id="email">      
+            <input oninput="checkphone()" type="text" placeholder="Enter Your Phone" value="" class="my-4" id="phone">      
+            <input oninput="checkage()" type="number" placeholder="Enter Your Age" value="" class="my-4" id="age">      
+            <input oninput="checkpassword()" type="text" placeholder="Enter Your Password" value="" class="my-4" id="password">      
+            <input oninput="samepassword()" type="text" placeholder="Repassword" value="" class="my-4" id="repassowrd">
+         </div>
+         <div class="d-flex justify-content-center">
+            <button id="submit" type="submit" class="btn text-danger btn-danger bg-transparent disabled">Submit</button>  
+         </div>
+
+      </div>
+
+      <script src="./js/index.js"></script>
+   </body>
+</html>
